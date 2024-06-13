@@ -30,7 +30,7 @@ local Highlight =
 
 -- Instances:
 
-local SimpleSpy2 = Instance.new("ScreenGui")
+local SimpleSpy = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local LeftPanel = Instance.new("Frame")
 local LogList = Instance.new("ScrollingFrame")
@@ -66,9 +66,9 @@ local gui = Instance.new("UICorner", nextb)
 SimpleSpy.Name = "SimpleSpy"
 SimpleSpy.ResetOnSpawn = false
 
-local SpyFind = CoreGui:FindFirstChild(SimpleSpy2.Name)
+local SpyFind = CoreGui:FindFirstChild(SimpleSpy.Name)
 
-if SpyFind and SpyFind ~= SimpleSpy2 then
+if SpyFind and SpyFind ~= SimpleSpy then
   SpyFind:Destroy()
 end
 
