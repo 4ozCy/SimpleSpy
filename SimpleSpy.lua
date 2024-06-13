@@ -63,8 +63,8 @@ local gui = Instance.new("UICorner", nextb)
 
 --Properties:
 
-SimpleSpy2.Name = "SimpleSpy"
-SimpleSpy2.ResetOnSpawn = false
+SimpleSpy.Name = "SimpleSpy"
+SimpleSpy.ResetOnSpawn = false
 
 local SpyFind = CoreGui:FindFirstChild(SimpleSpy2.Name)
 
@@ -73,7 +73,7 @@ if SpyFind and SpyFind ~= SimpleSpy2 then
 end
 
 Background.Name = "Background"
-Background.Parent = SimpleSpy2
+Background.Parent = SimpleSpy
 Background.BackgroundColor3 = Color3.new(1, 1, 1)
 Background.BackgroundTransparency = 1
 Background.Position = UDim2.new(0, 160, 0, 100)
